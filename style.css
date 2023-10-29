@@ -113,3 +113,14 @@ color:#323232
 
 }
 
+#highScores h2 {
+    font-size: 100px;
+}
+
+#study-png img {
+    height: auto;
+    width: 450px;
+    max-width: fit-content;
+    margin-top: 310px;
+    position: fixed;
+}
