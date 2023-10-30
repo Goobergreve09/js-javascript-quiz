@@ -3,3 +3,6 @@ In this challenge I was asked to created a functional timed Javascript quiz game
 
 ## Screenshot
 ![Capture](https://github.com/Goobergreve09/js-javascript-quiz/assets/143923830/4af1f60d-e77a-4117-9fb3-c98c9894555e)
+
+## Link
+https://goobergreve09.github.io/js-javascript-quiz/
