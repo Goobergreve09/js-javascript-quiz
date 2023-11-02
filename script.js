@@ -77,8 +77,9 @@ const questions = [
 ];
 
 let clock = document.getElementById("timer");
+var startBttn = document.getElementById("start-quiz");
 
-document.getElementById("start-quiz").addEventListener("click", startQuiz);
+startBttn.addEventListener("click", startQuiz);
 
 // The function that starts quiz upon clicking start button
 function startQuiz() {
@@ -137,7 +138,9 @@ function displayQuestion(questionNumber) {
 // Set up event listeners for all answers
 
 for (let i = 1; i <= 10; i++) {
-  document.getElementById(`answer${i}`).addEventListener("click", function () {
+  const allAnswers100 = document.getElementById(`answer${i}`);
+  if(allAnswers100) {
+  allAnswers100.addEventListener("click", function () {
     const questionData = questions[currentQuestion - 1];
     const selectedAnswerIndex = i - 1; // Convert button index to answer index
 
@@ -151,6 +154,7 @@ for (let i = 1; i <= 10; i++) {
     displayQuestion(currentQuestion); // Display the next question
     updateScoreDisplay(); // Update the score display
 });
+  }
 }
 
 
